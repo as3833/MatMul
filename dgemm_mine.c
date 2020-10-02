@@ -5,8 +5,8 @@ void square_dgemm(const int M,
 {
 	
     int i, j, k;
-    for (j = 0; j < M; ++j) {			
-		for (k = 0; k < M; ++k){
+    for (k = 0; k < M; ++k) {			
+		for (j = 0; j < M; ++j){
 			for (i = 0; i < M; ++i) {
                 C[j*M+i  ] += A[k*M+i  ] * B[j*M+k];
 			}
